@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /proyecto64/public/
+
+# Redirigir todo al index.php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

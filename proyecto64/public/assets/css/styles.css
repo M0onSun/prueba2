@@ -1,0 +1,56 @@
+/* Fondo elegante */
+body {
+    background: linear-gradient(135deg, #1e1e2f, #3b3b5f);
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    color: #ddd;
+}
+/* Contenedor del login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem; /* Espaciado extra */
+}
+
+/* Tarjeta del login */
+.login-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem; /* Más espacio interno */
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px; /* Más ancho */
+}
+/* Cajas de entrada */
+.form-control{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+/* Botones */
+.btn-primary:hover {
+    background: #1748a0;
+}
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+/* Transición global mejorada */
+.login-card {
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.login-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+.alert.fade-out {
+    transition: opacity 1s;
+    opacity: 0;
+}
